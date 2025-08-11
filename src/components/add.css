@@ -1,0 +1,16 @@
+div#add {
+    display: flex; 
+    width: 100%;    
+    align-items: center;
+    gap: 10px;
+  }
+
+div#add > input[type="text"] {
+    flex-grow: 1;
+    background-color: white;
+  }
+
+div#add > button {
+    width: 120px;
+    height: 25px;
+  }
