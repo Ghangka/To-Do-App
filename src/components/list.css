@@ -1,0 +1,26 @@
+div#list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+div#Dairy {
+    background-color: hsl(220, 75%, 75%);
+}
+
+div#Frozen {
+    background-color: hsl(220, 90%, 95%);
+}
+
+div#Fruit {
+    background-color: hsl(140, 75%, 75%);
+}
+
+div#Other {
+    background-color:hsl(0, 0%, 90%);
+}
+
+.title{
+    text-align: center;
+    margin: 5px;
+}

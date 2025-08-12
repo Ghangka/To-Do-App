@@ -1,0 +1,39 @@
+#left-side {
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+    flex-grow: 1;
+    min-width: 0;
+  }
+  
+  #right-side {
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+  }
+  
+  div#label {
+    flex-grow: 1; 
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+ }
+
+ div#shoppingItem {
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 16px; 
+    margin: 10px;
+    padding: 4px
+ }
+.quantity-stepper {
+    width: 35px;
+ }
+
+ .checked {
+    text-decoration: line-through;
+}
+
