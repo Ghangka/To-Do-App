@@ -13,6 +13,7 @@ type ShoppingListContextType = {
   addItem: (name: string) => void;
   updateCompleted: (name: string, completed: boolean) => void;
   deleteItem: (name: string) => void;
+  completed: () => number;
 };
 
 const ShoppingListContext = createContext<ShoppingListContextType | undefined>(
@@ -51,6 +52,16 @@ export function ShoppingListProvider({ children }: ShoppingListProviderProps) {
     setItems((prev) => prev.filter((x) => x.name !== name));
   };
 
+  const completed = () => {
+    let count = 0;
+    for (let i = 0; i < items.length; i++) {
+      if (items[i].completed) {
+        count++;
+      }
+    }
+    return count;
+  };
+
   return React.createElement(
     ShoppingListContext.Provider,
     {
@@ -62,6 +73,7 @@ export function ShoppingListProvider({ children }: ShoppingListProviderProps) {
         addItem,
         updateCompleted,
         deleteItem,
+        completed,
       },
     },
     children

@@ -12,6 +12,17 @@ div#components {
   flex-direction: column;
 }
 
+#title{
+  font-size: 25px;
+  text-align: center;
+  color:white
+}
+#status{
+   font-size: 20px;
+  text-align: center;
+  color:white
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
 }

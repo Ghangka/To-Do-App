@@ -44,7 +44,7 @@ export default function Add() {
     <div id="add">
       <input
         type="text"
-        placeholder="What do you need to do"
+        placeholder="What do you need to do?"
         value={value}
         onChange={handleChange}
         onKeyDown={handleKeyPress}
